@@ -1,0 +1,109 @@
+/* Home.css */
+.home-container {
+    margin: 20px;
+    background-color: #121212;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  }
+  
+  .dropdown-container {
+    margin-bottom: 20px;
+  }
+  
+  select {
+    padding: 10px;
+    font-size: 16px;
+    background-color: #333;
+    color: #ffffff;
+    border: 1px solid #555;
+  }
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    color: #ffffff;
+  }
+  
+  th, td {
+    padding: 10px;
+    text-align: left;
+    border: 1px solid #555;
+  }
+  
+  th {
+    background-color: #1e1e1e;
+  }
+  
+  tbody tr:hover {
+    background-color: #333;
+  }
+  
+  input[type="text"], select {
+    width: 100%;
+    padding: 5px;
+    background-color: #333;
+    color: #ffffff;
+    border: 1px solid #555;
+    box-sizing: border-box;
+  }
+  
+  h2 {
+    color: #ffffff;
+  }
+  
+  button {
+    padding: 10px 15px;
+    margin: 5px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+  }
+  
+  .button-container {
+    margin-bottom: 20px;
+  }
+  
+  .simulation-grid {
+    position: relative;
+    width: 100%;
+    height: 400px;
+    border: 1px solid #555;
+    margin-top: 20px;
+    overflow: hidden;
+    background-color: #000;
+    display: grid;
+    grid-template-columns: repeat(10, 1fr); /* 10 columns */
+    grid-template-rows: repeat(10, 1fr); /* 10 rows */
+  }
+  
+  .simulation-grid::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: linear-gradient(to right, green 1px, transparent 1px),
+                      linear-gradient(to bottom, green 1px, transparent 1px);
+    background-size: 10% 10%; /* Adjust based on the number of columns and rows */
+  }
+  
+  .vehicle {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background-color: red;
+    color: white;
+    text-align: center;
+    line-height: 20px;
+    border-radius: 50%;
+  }
+  
