@@ -8,8 +8,6 @@ This project simulates the movement of vehicles across different scenarios. It i
 
 - [Description](#description)
 - [Installation](#installation)
-- [Usage](#usage)
-- [Features](#features)
 
 
 ## Installation
